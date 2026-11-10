@@ -1,38 +1,66 @@
-# Data Cleaning and Reporting Automation
+# Task 3 – Data Cleaning and Preprocessing
 
 ## Project Overview
-This project automates data cleaning and report generation using Python, Pandas, and Jupyter Notebook. The IPL dataset is cleaned by removing duplicate records, handling missing values, and generating summary reports.
+This project focuses on cleaning and preprocessing a raw dataset using Python. Data cleaning is an important step in Data Analytics because raw datasets may contain missing values, duplicate records, incorrect data types, and inconsistent values.
 
-## Dataset
-- IPL_Data.csv
+## Objectives
+- Identify missing values in the dataset.
+- Detect and remove duplicate records.
+- Handle inconsistent and incorrect data.
+- Convert columns into appropriate data types.
+- Prepare clean data for further analysis.
 
-## Technologies Used
+## Tools and Technologies
 - Python
+- Jupyter Notebook
 - Pandas
 - NumPy
-- OpenPyXL
-- Jupyter Notebook
 
-## Features
-- Data Cleaning
-- Remove Duplicate Records
-- Handle Missing Values
-- Generate Summary Statistics
-- Export Cleaned Dataset
-- Generate Excel Report
+## Data Cleaning Process
 
-## Files
-- Data_Cleaning_Automation.ipynb
-- IPL_Data.csv
-- Cleaned_IPL_Data.csv
-- Summary_Report.csv
-- IPL_Report.xlsx
-- README.md
+### 1. Import Libraries
+Imported Pandas and NumPy libraries for data manipulation and preprocessing.
 
-## Output
-- Cleaned IPL dataset
-- Summary statistics report
-- Automated Excel report with multiple sheets
+### 2. Load Dataset
+Loaded the dataset using the Pandas `read_csv()` function.
+
+### 3. Understand the Dataset
+Used `head()`, `info()`, and `describe()` to understand the dataset structure and statistical information.
+
+### 4. Handle Missing Values
+Identified missing values using `isnull().sum()` and handled them using suitable techniques such as mean, median, or mode imputation.
+
+### 5. Remove Duplicate Records
+Detected duplicate records using `duplicated()` and removed them using `drop_duplicates()`.
+
+### 6. Data Type Conversion
+Checked and converted columns into appropriate data types wherever necessary.
+
+### 7. Verify Cleaned Dataset
+Rechecked missing values, duplicate records, and data types to ensure data quality.
+
+## Key Python Functions Used
+- `pd.read_csv()`
+- `df.head()`
+- `df.info()`
+- `df.describe()`
+- `df.isnull().sum()`
+- `df.duplicated().sum()`
+- `df.drop_duplicates()`
+- `df.dtypes`
+
+## Expected Outcomes
+- A clean and structured dataset.
+- Reduced missing and duplicate records.
+- Consistent data types.
+- Improved data quality.
+- Dataset ready for Exploratory Data Analysis and further processing.
 
 ## Conclusion
-This project demonstrates how Python can automate data cleaning and reporting tasks, making data analysis faster and more efficient.
+Data cleaning and preprocessing help improve the quality and reliability of datasets. This task demonstrates the use of Python and Pandas to prepare raw data for accurate analysis and meaningful insights.
+
+## Author
+B.Tech Computer Science and Engineering Student
+
+## Project Category
+Data Analytics | Data Cleaning | Data Preprocessing
